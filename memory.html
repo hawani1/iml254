@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<header>
+<div class="logo">HAWANI</div>
+
+<nav>
+<ul>
+<li><a href="index.html">HOME</a><li>
+<li><a href="about.html">ABOUT ME</a><li>
+<li><a href="meow.html">MY MEOW</a><li>
+<li><a href="gf.html">GIRLFRIENDS</a><li>
+<li><a href="memory.html">MEMORY</a><li>
+<li><a href="edu.html">EDUCATION</a><li>
+<li><a href="fav.html">FAV</a><li>
+
+<style>
+*{
+margin:0;
+padding:0;
+}
+header{
+height:60px;
+background:#bd9dc6;
+padding:0 50px;
+}
+.logo{
+width:30%;
+float:left;
+color:#f8f6f7;
+font-weight:bold;
+text-transform:uppercase;
+line-height:60px;
+font-size:35px;
+font-family:serif;
+}
+nav{
+width:68%;
+float:right;
+}
+nav ul{
+list-style:none;
+float:right;
+}
+nav ul li{
+display: inline-block;
+}
+nav ul li a{
+text-decoration: none;
+color:#f8f6f7;
+font-family:serif;
+font-weight:bold;
+margin:0 10px;
+line-height:60px;
+text-transform: uppercase;
+}
+</style>
+</ul>
+</nav>
+</header>
+
+<head>
+<br>
+<br>
+<br>
+<br>
+<center><h1> Memory of My Life with My Girls <3 </h1></center>
+<br>
+</head>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: serif;
+  color:#f8f6f7;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #bd9dc6;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #bd9dc6;
+}
+
+.btn.active {
+  background-color: #bd9dc6;
+  color: white;
+}
+</style>
+</head>
+
+<head>
+<style>
+body{
+background-image:url(mm1.png);
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:100% 100%;
+</style>
+</head>
+
+<!-- Header -->
+<div class="header" id="myHeader">
+<br>
+  <p>Kindly click on the buttons to change the grid view :)</p>
+<br>
+  <button class="btn" onclick="one()">1</button>
+  <button class="btn active" onclick="two()">2</button>
+  <button class="btn" onclick="four()">3</button>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="slf.jpg" style="width:100%">
+    <img src="m1.jpg" style="width:100%">
+    <img src="m8.jpg" style="width:100%">
+    <img src="m2.jpg" style="width:100%">
+    <img src="rs1.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="m3.jpg" style="width:100%">
+    <img src="gf1.jpg" style="width:100%">
+    <img src="md.jpg" style="width:100%">
+    <img src="ld.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="nz.jpg" style="width:100%">
+    <img src="plr.jpg" style="width:100%">
+    <img src="sg.jpg" style="width:100%">
+    <img src="mm.jpg" style="width:100%">
+    <img src="l.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="m8.jpg" style="width:100%">
+    <img src="sws.jpg" style="width:100%">
+    <img src="wiu.jpg" style="width:100%">
+    <img src="m5.jpg" style="width:100%">
+    <img src="sw.jpg" style="width:100%">
+  </div>
+</div>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+<style>
+footer {
+background: #bd9dc6;
+color: #f8f6f7;
+padding: 15px 50px;
+text-align: center;
+}
+</style>
+
+<footer>
+<p>All Right Reserved by Hawani's Digital Diary</p>
+</footer>
+</body>
+</html>
